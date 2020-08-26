@@ -1,0 +1,30 @@
+section.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form.search {
+    border: 1px solid black;
+    padding: var(--body-margin);
+    border-radius: 21px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-width: var(--mobile);
+    max-width: 897px;
+    margin-top: 95px;
+}
+
+form.search div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+form.search input {
+    border: none;
+    border-bottom: 1px solid black;
+    padding: var(--ratio-three);
+}

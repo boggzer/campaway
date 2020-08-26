@@ -1,0 +1,23 @@
+/* mobile */
+@media screen and (min-width: 641px) {
+    .fa-bars {
+        display: none;
+    }
+    .menu-items {
+        visibility: visible;
+    }
+}
+
+
+/* tablet */
+@media screen and (min-width: 1024px) {
+
+}
+
+/* desktop */
+@media screen and (min-width: 1441px) {
+    header { width: 1440px; }
+    header ul:last-of-type {
+        position: relative;
+    }
+}

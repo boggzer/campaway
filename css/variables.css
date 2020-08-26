@@ -1,0 +1,22 @@
+:root {
+    /* palette */
+    --primary-green: #1b9966;
+    --primary-blue: #0a3334;
+    --accent-yellow: #f5ec66;
+    /* main sizes */
+    --body-margin: 16.18px;
+    /* ratio numbers */
+    --ratio-one: 1.618px;
+    --ratio-two: 3.236px;
+    --ratio-three: 4.854px;
+    --ratio-four: 6.472px;
+    --ratio-five: 8.09px;
+    --ratio-six: 9.708px;
+    --ratio-seven: 11.326px;
+    --ratio-eight: 12.944px;
+    --ratio-nine: 14.562px;
+    /* screen sizes */
+    --mobile: 640px;
+    --tablet: 1024px;
+    --desktop: 1440px;
+}

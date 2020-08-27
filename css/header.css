@@ -1,12 +1,32 @@
 header {
+    position: fixed;
+    background-color: #fff;
     width: 100%;
     margin: 0 auto;
+    top: 0;
     left: 0;
     right: 0;
-    background-color: seashell;
+    z-index: 1;
+    height: 60px;
 }
 
-header ul {
+nav {
+    z-index: 1;
+    background-color: inherit;
+}
+
+nav::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top:0;
+    transform: scale(.95);
+    box-shadow: 0px -5px 20px var(--primary-blue);
+    position: absolute;
+    z-index: -1;
+}
+
+header ul, section ul {
     list-style-type: none;
 }
 
@@ -41,4 +61,9 @@ header ul:last-of-type {
     left: var(--body-margin);
     padding: var(--ratio-five);
     margin: var(--ratio-three) var(--body-margin);
+}
+
+.minimize, .minimize > *, .minimize ul li {
+    height: 45px;
+    margin: 0;
 }

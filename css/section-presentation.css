@@ -1,0 +1,30 @@
+section.presentation {
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/backgrounds/pexels-marko-blazevic-757170.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section.presentation > div, section.presentation > div > * {
+    max-width: 650px;
+}
+
+section.presentation h3 {
+    width: 60%;
+    margin: 0 auto;
+}
+
+section.presentation h3, section.presentation h1 {
+    text-align: center;
+}
+
+section.presentation > div {
+    background-color: var(--accent-yellow);
+    padding: 70px;
+    border-radius: 21px;
+}
+
+section.presentation > div > * + * {
+    margin-top: var(--ratio-five);
+}

@@ -6,8 +6,21 @@
     .menu-items {
         visibility: visible;
     }
+    form.search {
+        height: 110px;
+    }
+    section.shop > h1 {
+        font-size: 40pt;
+        text-align: right;
+    }
 }
 
+/* in-between */
+@media screen and (min-width: 800px) {
+    .fa-chevron-circle-right {
+        font-size: 40pt;
+    }
+}
 
 /* tablet */
 @media screen and (min-width: 1024px) {

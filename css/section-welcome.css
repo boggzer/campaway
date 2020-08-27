@@ -1,30 +1,88 @@
+section {
+    display: flex;
+    align-items: stretch;
+    height: 100vh;
+}
+
 section.welcome {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    background-image: url('../assets/backgrounds/pexels-cliford-mervil-2398220.jpg');
+    background-attachment: fixed;
+    background-size: cover;
     align-items: center;
+    height: calc(100vh - 60px);
+    margin-top: 60px;
+    /* vertical-align: top; */
 }
 
 form.search {
-    border: 1px solid black;
-    padding: var(--body-margin);
     border-radius: 21px;
     background-color: white;
+    
+    width: 100%;
+    max-width: 897px;
+    min-height: 112px;
+    margin-top: calc(10px + 15vmin);
+    height: 112px;
+    
+    padding: var(--body-margin);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+}
+
+form.search > div {
+    margin: var(--ratio-four);
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    min-width: var(--mobile);
-    max-width: 897px;
-    margin-top: 95px;
+    align-items: stretch;
+    justify-content: space-between;
 }
 
-form.search div {
-    display: flex;
-    justify-content: space-evenly;
+form.search > * + * {
+    margin-left: calc(var(--body-margin) * 1.618);
 }
 
-form.search input {
-    border: none;
+.search-input > input {
     border-bottom: 1px solid black;
-    padding: var(--ratio-three);
+    min-height: max-content;
+    padding: 1px;
+}
+
+.search-submit {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    align-self: stretch;
+    justify-self: flex-end;
+    background: none;
+    width: 100%;
+    max-width: 75px;
+}
+
+.fa-chevron-circle-right {
+    height: 100%;
+    font-size: calc(10pt + 5vw);
+}
+
+.logo {
+    width: 100%;
+    max-height: 250px;
+    height: calc(100px + 10vh);
+    min-height: 100px;
+    margin: var(--body-margin);
+    background-image: url('../assets/campaway-logo.svg'), url('../assets/campaway-logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+section.welcome > div:last-of-type {
+    text-align: center;
+    color: white;
+    mix-blend-mode: difference;
 }

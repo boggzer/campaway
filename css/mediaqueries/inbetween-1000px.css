@@ -1,9 +1,3 @@
-/* in-between */
-@media screen and (min-width: 800px) {
-    .fa-chevron-circle-right {
-        font-size: 40pt;
-    }
-}
 @media screen and (min-width: 1000px) {
     .tents > *:not(:first-of-type), .products > *:not(:first-of-type) {
         display: flex;

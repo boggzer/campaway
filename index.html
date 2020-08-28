@@ -4,18 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
-    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
+    
+    <!-- js -->
     <script defer src="./js/index.js"></script>
+
     <!-- fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
     <!-- icons -->
+    <script defer src="https://kit.fontawesome.com/bbd61d3033.js" crossorigin="anonymous"></script>
+    
+    <!-- media queries -->
     <link rel='stylesheet' media='screen and (min-width: 641px)' href='./css/mediaqueries/mobile.css' type="text/css" />
+    <link rel='stylesheet' media='screen and (min-width: 800px)' href='./css/mediaqueries/inbetween-800px.css' type="text/css" />
+    <link rel='stylesheet' media='screen and (min-width: 1000px)' href='./css/mediaqueries/inbetween-1000px.css' type="text/css" />
     <link rel='stylesheet' media='screen and (min-width: 1441px)' href='./css/mediaqueries/desktop.css' type="text/css" />
 
-
-    <script defer src="https://kit.fontawesome.com/bbd61d3033.js" crossorigin="anonymous"></script>
+    <!-- css -->
     <link href="./css/variables.css" rel="stylesheet" type="text/css" />
     <link href="./css/index.css" rel="stylesheet" type="text/css" />
     <link href="./css/header.css" rel="stylesheet" type="text/css" />
@@ -30,7 +35,7 @@
 </head>
 
 <body>
-    <!-- header -->
+    <!-- header and navigation -->
     <header>
         <nav>
             <button><i class="fas fa-bars"></i></button>
@@ -52,6 +57,8 @@
             </ul>
         </nav>
     </header>
+
+    <!-- section 1: welcome page with search bar -->
     <section class="welcome">
         <form class="search">
             <div class="search-input">
@@ -74,6 +81,8 @@
             <p>Et sint occaecat magna pariatur sit et.</p>
         </div>
     </section>
+
+    <!-- section 2: shop -->
     <section class="shop">
         <h1>New <span>adventures</span></h1>
         <div class="tents">
@@ -182,6 +191,8 @@
             </div>
         </div>
     </section>
+
+    <!-- section 3: presentation -->
     <section class="presentation">
         <div>
             <h1>Our<br>journey</h1>
@@ -196,6 +207,8 @@
                 consectetur amet nulla non pariatur elit velit ea. Aute in laborum sunt deserunt dolor.</p>
         </div>
     </section>
+
+    <!-- section 4: contact by email form -->
     <section class="contact">
         <div>
             <h3>Got a question?<br>Send us an email!</h3>
@@ -211,7 +224,10 @@
             </form>
         </div>
     </section>
+
     <div class="logo"></div>
+
+    <!-- footer with contact information, links etc -->
     <footer>
         <div>
             <ul>

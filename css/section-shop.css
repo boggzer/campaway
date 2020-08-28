@@ -5,7 +5,11 @@ section.shop {
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
-    height: 100vh;
+
+    min-height: 700px;
+    height: 80vh;
+    max-height: 750px;
+
 }
 
 section.shop > h1 {
@@ -17,6 +21,7 @@ section.shop > h1 {
 }
 
 section.shop > h1 > span {
+    font-size: inherit;
     color: var(--accent-yellow);
     background-color: var(--primary-green);
     padding: var(--ratio-two) var(--ratio-six);
@@ -83,6 +88,8 @@ section.shop > div > button {
     border-radius: var(--ratio-two);
     margin: var(--body-margin);
     width: 100%;
+    background-color: var(--primary-green);
+    color: #fff;
 }
 
 .tents > *:not(:first-of-type), .products > *:not(:first-of-type) {

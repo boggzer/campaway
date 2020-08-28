@@ -1,0 +1,10 @@
+@media screen and (min-width: 1023px) {
+    section.shop {
+        height: 90vmin;
+    }
+
+    section.shop {
+        max-height: 800px;
+    }
+
+}

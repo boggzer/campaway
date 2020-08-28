@@ -2,4 +2,20 @@
     .fa-chevron-circle-right {
         font-size: 40pt;
     }
+
+    footer {
+        height: 325px;
+    }
+
+    footer > div > *:not(h3) {
+        flex: 1;
+        padding: var(--body-margin);
+        margin: var(--ratio-two);
+        min-width: 160px;
+        list-style-type: none;
+    }
+    
+    footer > div > div {
+        flex: 1;
+    }
 }

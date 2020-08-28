@@ -2,4 +2,7 @@
     .tents > *:not(:first-of-type), .products > *:not(:first-of-type) {
         display: flex;
     }
+    .fa-chevron-circle-right {
+        font-size: 35pt;
+    }
 }

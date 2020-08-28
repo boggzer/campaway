@@ -1,10 +1,12 @@
 footer {
     height: 400px;
     width: 100%;
+    overflow: hidden;
     left: 0;
     right: 0;
     bottom: 0;
     display: flex;
+    flex-flow: row wrap;
     margin: 0;
     align-items: center;
     justify-content: center;
@@ -16,20 +18,26 @@ footer, a[href*="mailto"], footer a, footer a:hover, footer p, footer h3 {
 }
 
 footer > div {
+    padding: var(--body-margin);
     display: flex;
     flex-flow: row wrap;
+    justify-content:center;
     margin: 0 auto;
     width: 750px;
 }
 
-footer > div > * {
+footer > div > *:not(h3) {
     flex: 1;
-    min-width: 125px;
+    padding: var(--body-margin);
+    margin: var(--ratio-two);
+    min-width: 180px;
+    max-width: 180px;
     list-style-type: none;
 }
 
-footer > div > * > * {
-    margin: var(--ratio-one);
+footer > div > div {
+    flex: 0;
+    margin-right: 0 auto;
 }
 
 footer .settings {
@@ -40,9 +48,10 @@ footer .settings {
 }
 
 footer .settings > * {
+    padding: unset;
     min-width: unset;
     text-align: center;
     width: fit-content;
-    margin: var(--ratio-seven) 0;
+    margin:0;
     margin-left: calc(var(--body-margin) + 2vw);
 }

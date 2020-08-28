@@ -9,7 +9,7 @@ section.welcome {
     display: flex;
     flex-direction: column;
     background-image: url('../assets/backgrounds/pexels-cliford-mervil-2398220.jpg');
-    background-attachment: fixed;
+    background-attachment: local;
     background-size: cover;
     align-items: center;
     height: calc(100vh - 60px);
@@ -19,9 +19,8 @@ section.welcome {
 form.search {
     border-radius: 21px;
     background-color: white;
-    
-    width: 100%;
     max-width: 897px;
+    width: 90%;
     margin-top: calc(5px + 15vmin);
     padding: var(--body-margin);
 
@@ -34,6 +33,7 @@ form.search {
 
 form.search > div {
     margin: var(--ratio-four);
+    width: 100%;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -45,32 +45,55 @@ form.search > * + * {
     margin-left: calc(var(--body-margin) * 1.618);
 }
 
+form.search > * + .search-submit {
+    margin: 0;
+}
+
 .search-input > input {
     border-bottom: 1px solid black;
     min-height: max-content;
     padding: 1px;
+    flex: 1;
 }
 
 .search-submit {
     font-family: 'Roboto', Helvetica, sans-serif;
-    align-self: stretch;
-    justify-self: flex-end;
-    background: none;
-    width: 100%;
-    max-width: 75px;
+    background: var(--primary-blue);
+    border-radius: 21px;
+    padding: var(--ratio-four);
+    position: relative;
+    width: 45%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-submit::before {
+    content: 'Search';
+    color: #fff;
+    margin-right: var(--body-margin);
+    flex: 5;
 }
 
 .fa-chevron-circle-right {
-    height: 100%;
     font-size: calc(10pt + 5vw);
+    color: var(--primary-green);
+    background-color: #fff;
+    height: 100%;
+
+    flex: 1;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 0px 5px var(--primary-green);
 }
 
 .logo {
     width: 100%;
     max-height: 250px;
-    height: calc(80px + 10vh);
+    height: calc(80px + 7vmin);
     min-height: 80px;
-    margin: calc(var(--ratio-two) + 5vmin);
+    margin: calc(var(--body-margin) + 5vmin) 0 calc(var(--body-margin) + 2vmin) 0;
     background-image: url('../assets/campaway-logo.svg'), url('../assets/campaway-logo.png');
     background-repeat: no-repeat;
     background-size: contain;

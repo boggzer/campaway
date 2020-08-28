@@ -1,0 +1,32 @@
+section.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 500px;
+    background: var(--primary-blue);
+    border: 1px solid var(--primary-blue);
+    color: #fff;
+}
+
+.contact form {
+    width: 350px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+form input, form textarea {
+    border-radius: 5px;
+ }
+
+ form textarea {
+    resize: none; 
+ }
+
+ .contact button { 
+    background: var(--primary-green);
+    border-radius: 21px;
+    padding: var(--ratio-four);
+    margin: var(--body-margin);
+    color: #fff;
+ }

@@ -3,19 +3,61 @@
     button .fa-bars {
         display: none;
     }
+
     .menu-items {
         visibility: visible;
     }
+
     form.search {
         height: 112px;
         min-height: 112px;
+        flex-wrap: nowrap;
     }
+
+    form.search > div {
+        width: unset;
+    }
+
     section.shop > h1 {
         font-size: 40pt;
         text-align: right;
     }
+    
     .tents > div:nth-of-type(2), .products > div:nth-of-type(2) {
         display: flex;
+    }
+
+    .search-submit {
+        padding: unset;
+        background: unset;
+        border-radius: unset;
+        position: unset;
+        left: unset;
+        transform: unset;
+        display: unset;
+        margin: unset;
+
+        font-family: 'Roboto', Helvetica, sans-serif;
+        align-self: center;
+        justify-self: flex-end;
+        background: none;
+        width: 100%;
+        max-width: 50px;
+        margin: var(--body-margin);
+    }
+
+    .search-submit::before {
+        content: none;
+    }
+
+    .fa-chevron-circle-right {
+        background: unset;
+        flex: unset;
+        border-radius: unset;
+        box-shadow: unset;
+
+        height: 100%;
+        font-size: calc(10pt + 5vw);
     }
 }
 

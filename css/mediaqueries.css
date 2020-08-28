@@ -1,17 +1,21 @@
 /* mobile */
 @media screen and (min-width: 641px) {
-    .fa-bars {
+    button .fa-bars {
         display: none;
     }
     .menu-items {
         visibility: visible;
     }
     form.search {
-        height: 110px;
+        height: 112px;
+        min-height: 112px;
     }
     section.shop > h1 {
         font-size: 40pt;
         text-align: right;
+    }
+    .tents > div:nth-of-type(2), .products > div:nth-of-type(2) {
+        display: flex;
     }
 }
 
@@ -19,6 +23,11 @@
 @media screen and (min-width: 800px) {
     .fa-chevron-circle-right {
         font-size: 40pt;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .tents > *:not(:first-of-type), .products > *:not(:first-of-type) {
+        display: flex;
     }
 }
 

@@ -1,7 +1,8 @@
 section {
     display: flex;
     align-items: stretch;
-    height: 100vh;
+    min-height: 775px;
+    overflow-x: hidden;
 }
 
 section.welcome {
@@ -13,7 +14,6 @@ section.welcome {
     align-items: center;
     height: calc(100vh - 60px);
     margin-top: 60px;
-    /* vertical-align: top; */
 }
 
 form.search {
@@ -22,16 +22,12 @@ form.search {
     
     width: 100%;
     max-width: 897px;
-    min-height: 112px;
-    margin-top: calc(10px + 15vmin);
-    height: 112px;
-    
+    margin-top: calc(5px + 15vmin);
     padding: var(--body-margin);
 
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
-    flex-wrap: wrap;
     position: relative;
     overflow: hidden;
 }
@@ -72,9 +68,9 @@ form.search > * + * {
 .logo {
     width: 100%;
     max-height: 250px;
-    height: calc(100px + 10vh);
-    min-height: 100px;
-    margin: var(--body-margin);
+    height: calc(80px + 10vh);
+    min-height: 80px;
+    margin: calc(var(--ratio-two) + 5vmin);
     background-image: url('../assets/campaway-logo.svg'), url('../assets/campaway-logo.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -83,6 +79,5 @@ form.search > * + * {
 
 section.welcome > div:last-of-type {
     text-align: center;
-    color: white;
-    mix-blend-mode: difference;
+    color: #fff;
 }

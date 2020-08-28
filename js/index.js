@@ -8,9 +8,11 @@ function addEventListeners() {
 
 function resizeNav(event) {
     if (window.pageYOffset > (window.innerHeight * 0.2)) {
-        document.querySelector('header').classList.add('minimize')
+        document.querySelector('header').classList.add('minimize');
+        document.querySelector('header button').classList.add('minimize-icon');
     } else {
-        document.querySelector('header').classList.remove('minimize')
+        document.querySelector('header').classList.remove('minimize');
+        document.querySelector('header button').classList.remove('minimize-icon');
     }
 }
 

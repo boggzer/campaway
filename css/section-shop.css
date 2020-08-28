@@ -4,6 +4,8 @@ section.shop {
     padding: var(--body-margin) 0;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
+    height: 100vh;
 }
 
 section.shop > h1 {
@@ -77,9 +79,12 @@ section.shop > div > div + div {
 section.shop > div > button {
     align-self: center;
     justify-self: stretch;
-    padding: var(--body-margin);
+    padding: var(--ratio-seven);
     border-radius: var(--ratio-two);
     margin: var(--body-margin);
-    width: 90px;
-    min-width: fit-content;
+    width: 100%;
+}
+
+.tents > *:not(:first-of-type), .products > *:not(:first-of-type) {
+    display: none;
 }

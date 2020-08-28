@@ -4,10 +4,11 @@ section.presentation {
     background-image: url('../assets/backgrounds/pexels-marko-blazevic-757170.jpg');
     background-attachment: fixed;
     background-size: cover;
+    height: 100vh;
 }
 
 section.presentation > div, section.presentation > div > * {
-    max-width: 650px;
+    max-width: calc(500px + 10vmin);
 }
 
 section.presentation h3 {
@@ -21,7 +22,8 @@ section.presentation h3, section.presentation h1 {
 
 section.presentation > div {
     background-color: var(--accent-yellow);
-    padding: 70px;
+    padding: calc(20px + 5vmin);
+    margin: var(--body-margin);
     border-radius: 21px;
 }
 

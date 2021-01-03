@@ -1,16 +1,13 @@
 {
   "name": "campaway",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mockup of a website for booking camping and other outdoor experiences.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/boggzer/campaway.git"
   },
-  "author": "",
+  "author": "Jonathan GB",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/boggzer/campaway/issues"
